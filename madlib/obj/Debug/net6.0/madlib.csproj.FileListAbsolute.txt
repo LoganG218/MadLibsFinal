@@ -1,0 +1,15 @@
+C:\Users\Logan\Documents\Coding Early week\madlib\bin\Debug\net6.0\madlib.exe
+C:\Users\Logan\Documents\Coding Early week\madlib\bin\Debug\net6.0\madlib.deps.json
+C:\Users\Logan\Documents\Coding Early week\madlib\bin\Debug\net6.0\madlib.runtimeconfig.json
+C:\Users\Logan\Documents\Coding Early week\madlib\bin\Debug\net6.0\madlib.dll
+C:\Users\Logan\Documents\Coding Early week\madlib\bin\Debug\net6.0\madlib.pdb
+C:\Users\Logan\Documents\Coding Early week\madlib\obj\Debug\net6.0\madlib.csproj.AssemblyReference.cache
+C:\Users\Logan\Documents\Coding Early week\madlib\obj\Debug\net6.0\madlib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Logan\Documents\Coding Early week\madlib\obj\Debug\net6.0\madlib.AssemblyInfoInputs.cache
+C:\Users\Logan\Documents\Coding Early week\madlib\obj\Debug\net6.0\madlib.AssemblyInfo.cs
+C:\Users\Logan\Documents\Coding Early week\madlib\obj\Debug\net6.0\madlib.csproj.CoreCompileInputs.cache
+C:\Users\Logan\Documents\Coding Early week\madlib\obj\Debug\net6.0\madlib.dll
+C:\Users\Logan\Documents\Coding Early week\madlib\obj\Debug\net6.0\refint\madlib.dll
+C:\Users\Logan\Documents\Coding Early week\madlib\obj\Debug\net6.0\madlib.pdb
+C:\Users\Logan\Documents\Coding Early week\madlib\obj\Debug\net6.0\madlib.genruntimeconfig.cache
+C:\Users\Logan\Documents\Coding Early week\madlib\obj\Debug\net6.0\ref\madlib.dll
