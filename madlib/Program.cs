@@ -14,7 +14,7 @@ namespace MadLibs
             {
 
             
-            Console.WriteLine("Welcome to MADLibs! Please select an option, 1, 2, or 3.");
+            Console.WriteLine("Welcome to MADLibs! Please select a story option, 1, 2, 3 or 4 to quit.");
             var input = Console.ReadLine();
             string Story = "";
             
@@ -37,6 +37,12 @@ namespace MadLibs
                         Story = MadLibThree.getMadLibThree();
 
                         break;
+
+                    case "4":
+                        Console.WriteLine("Thank you for playing!");
+                        repeat = false;
+                        break;
+                     
 
 
 
