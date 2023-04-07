@@ -50,9 +50,8 @@ namespace MadLibs
                         Console.WriteLine("Unknown input");
                         break;
                 }
-
                 MadLibTwo.saveBets(Story);
             }
         }
-    }
-}
+    } 
+} 

@@ -52,4 +52,15 @@ class MadLibOne
         return story;
 
     }
+
+    public static void saveBets(string story)
+    {
+        var path = @"C:\Users\Logan\Documents\coding\test1\file.txt";
+        using (StreamWriter writer = new StreamWriter(path))
+        {
+            writer.WriteLine(story);
+        }
+        string readText = File.ReadAllText(path);
+        Console.WriteLine(readText);
+    }
 }
