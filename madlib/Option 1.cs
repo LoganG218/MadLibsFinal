@@ -58,7 +58,7 @@ class MadLibOne
 
     public static void saveBets(string story)
     {
-        Console.WriteLine("This is from the save bets method");
+        
         var path = "./file.txt";
         //try
         //{
@@ -77,12 +77,12 @@ class MadLibOne
                 byte[] info = new UTF8Encoding(true).GetBytes(story);
                 
                 fs.Write(info, 0, info.Length);
-                Console.WriteLine("This is writing to the file");
+                
             }
 
             using (StreamReader sr = File.OpenText(path))
             {
-                Console.WriteLine("This is reading");
+               
                 string s = "";
                 while ((s = sr.ReadLine()) != null)
                 {
