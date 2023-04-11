@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
+
 class MadLibOne
 {
     static public string getMadLibOne()
@@ -55,12 +58,24 @@ class MadLibOne
 
     public static void saveBets(string story)
     {
-        var path = @"C:\Users\Logan\Documents\coding\test1\file.txt";
-        using (StreamWriter writer = new StreamWriter(path))
+        Console.WriteLine("This is from the save bets method");
+        var path = "./file.txt";
+        try
         {
-            writer.WriteLine(story);
+            using (StreamWriter writer = new StreamWriter(path, true))
+            {
+                writer.WriteLine(story);
+            }
         }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.ToString());
+        }
+
         string readText = File.ReadAllText(path);
-        Console.WriteLine(readText);
+       
     }
 }
+
+
+
