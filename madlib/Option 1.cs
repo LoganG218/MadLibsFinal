@@ -34,7 +34,7 @@ class MadLibOne
         Console.WriteLine("\nEnter an article of clothing or outfit: ");
         string clothing = Console.ReadLine();
 
-        Console.WriteLine("\nEnter an action verb: ");
+        Console.WriteLine("\nEnter an action verb ending with 'ing': ");
         string AVerb = Console.ReadLine();
 
         Console.WriteLine("\nEnter one more adjective: ");
@@ -60,11 +60,34 @@ class MadLibOne
     {
         Console.WriteLine("This is from the save bets method");
         var path = "./file.txt";
+        //try
+        //{
+
+        //    using (StreamWriter writer = new StreamWriter(path, true))
+        //    {
+        //        writer.WriteLine(story);
+        //    }
+        //}
+
         try
         {
-            using (StreamWriter writer = new StreamWriter(path, true))
+            
+            using (FileStream fs = File.Create(path))
             {
-                writer.WriteLine(story);
+                byte[] info = new UTF8Encoding(true).GetBytes(story);
+                
+                fs.Write(info, 0, info.Length);
+                Console.WriteLine("This is writing to the file");
+            }
+
+            using (StreamReader sr = File.OpenText(path))
+            {
+                Console.WriteLine("This is reading");
+                string s = "";
+                while ((s = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(s);
+                }
             }
         }
         catch (Exception ex)

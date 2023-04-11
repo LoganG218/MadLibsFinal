@@ -50,7 +50,10 @@ namespace MadLibs
                         Console.WriteLine("Unknown input");
                         break;
                 }
-                MadLibOne.saveBets(Story);
+                if (input != "4")
+                {
+                    MadLibOne.saveBets(Story);
+                }
             }
         }
     } 
